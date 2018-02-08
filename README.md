@@ -25,3 +25,4 @@ Email. info@imagitechstudios.com
 * SAB01 Added projectile and target with movement script
 * SAB02 Added movement speed based on frame rate
 * SAB03 Added physics to projectile
+* SAB04 Added launch projectile on mouse click
