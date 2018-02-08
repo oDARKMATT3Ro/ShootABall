@@ -4,21 +4,17 @@ using UnityEngine;
 
 public class ProjectileMovement : MonoBehaviour {
 
-    public Vector3 newPosition;
+    public float speed = 5;
 
 	// Use this for initialization
 	void Start () {
 
 	}
 
-    public void UpdatePosition()
+    // Update is called once per frame
+    void Update()
     {
-        Transform t = GetComponent<Transform>();
-        t.position = newPosition;
+        Vector3 positionDelta = new Vector3(0, 0, speed * Time.deltaTime);
+        transform.position = transform.position + positionDelta;
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
