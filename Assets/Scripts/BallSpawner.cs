@@ -5,6 +5,7 @@ using UnityEngine;
 public class BallSpawner : MonoBehaviour {
 
     public GameObject prefab;
+    public PlayerAim aimComponent;
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +16,9 @@ public class BallSpawner : MonoBehaviour {
 	void Update () {
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(prefab, transform.position, transform.rotation);
+            Ray aimRay = aimComponent.GetAimRay();
+            Quaternion aimRotation = Quaternion.LookRotation(aimRay.direction);
+            Instantiate(prefab, transform.position, aimRotation);
         }
 	}
 }

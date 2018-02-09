@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1443978457188124, guid: 93d68236e298ce64ca40979e31a480d7, type: 2}
+  aimComponent: {fileID: 1350681674}
 --- !u!4 &511140927
 Transform:
   m_ObjectHideFlags: 0

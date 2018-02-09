@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class PlayerAim : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    public Ray GetAimRay()
+    {
         Camera gameCamera = GetComponent<Camera>();
         Ray aimRay = gameCamera.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(aimRay.origin, aimRay.direction, Color.red);
+        return aimRay;
     }
 }

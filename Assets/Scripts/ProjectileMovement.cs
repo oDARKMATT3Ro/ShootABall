@@ -23,7 +23,7 @@ public class ProjectileMovement : MonoBehaviour {
         if (!ballLaunched)
         {
             Rigidbody rb = GetComponent<Rigidbody>();
-            rb.AddForce(new Vector3(0, 0, force), ForceMode.Impulse);
+            rb.AddForce(transform.forward * force, ForceMode.Impulse);
             ballLaunched = true;
         }
     }
