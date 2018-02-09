@@ -28,3 +28,4 @@ Email. info@imagitechstudios.com
 * SAB04 Added launch projectile on mouse click
 * SAB05 Added raycast on camera for player aim
 * SAB06 Connected mouse to player aim and projectile
+* SAB07 Added random spawning mole to be target
